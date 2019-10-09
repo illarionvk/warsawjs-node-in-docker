@@ -1,0 +1,6 @@
+#! /bin/bash
+
+set -euo pipefail
+
+docker-compose up -d --no-recreate --build \
+  && docker-compose exec web ./docker-entrypoint.sh /bin/bash

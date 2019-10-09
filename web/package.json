@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "dependencies": {
+    "next": "9.1.1",
+    "now": "^16.3.1",
+    "react": "16.10.2",
+    "react-dom": "16.10.2"
+  },
+  "devDependencies": {
+    "eslint": "6.5.1",
+    "eslint-plugin-react": "7.16.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 versions",
+    "Firefox ESR",
+    "Safari >= 8",
+    "iOS >= 8"
+  ],
+  "scripts": {
+    "dev": "next -p $PORT",
+    "deploy": "now --token $ZEIT_SECRET_TOKEN --name $ZEIT_PROJECT_NAME --prod",
+    "build": "next build",
+    "start": "next start",
+    "lint": "./bin/lint.sh",
+    "watch": "hivemind  --port 3000 ./Procfile.dev"
+  }
+}

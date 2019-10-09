@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+  web:
+    build: './web'
+    volumes:
+      - './web:/app'
+      - 'web_tmp:/mnt/tmp'
+    ports:
+      - '3000:3000'
+      - '9229:9229'
+    env_file: './.env'
+    command: ["/bin/bash"]
+    stdin_open: true
+    tty: true
+volumes:
+  web_tmp:
