@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "dev": "next -p $PORT",
-    "deploy": "now --token $ZEIT_SECRET_TOKEN --name $ZEIT_PROJECT_NAME --prod",
+    "deploy": "yarn run build && now --token $ZEIT_SECRET_TOKEN --name $ZEIT_PROJECT_NAME --prod",
     "build": "next build",
     "start": "next start",
     "lint": "./bin/lint.sh",
