@@ -31,7 +31,9 @@ Out of the box, you'll be able to use this template to develop a [Next.js/React 
 
 1. When you're ready to deploy, type:
 
-   `yarn run deploy`
+   ```
+   yarn run deploy
+   ```
 
 ## Stopping containers
 
